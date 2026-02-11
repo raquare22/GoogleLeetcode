@@ -1,7 +1,17 @@
 
 
+====================================
+
+Why do we write this?
+List<Map.Entry<Character, Integer>> entries = new ArrayList<>(map.entrySet());   
+https://claude.ai/public/artifacts/ac967675-5e5f-4721-9e37-e6772ee29164
 
 
-
-Why entrySet()? Can't we skip it?
+==================================
+How to sort HashMap,    Why entrySet()? Can't we skip it?
 https://claude.ai/public/artifacts/a0d70bef-ff95-4d91-b515-282762e9628e
+
+List<Map.Entry<Character,Integer>> entries =  new ArrayList<>(map.entrySet());
+// Result: [h=1, e=1, l=2, o=1] — you have BOTH! ✓
+
+============================

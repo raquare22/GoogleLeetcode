@@ -17,3 +17,12 @@ List<Map.Entry<Character,Integer>> entries =  new ArrayList<>(map.entrySet());
 // Result: [h=1, e=1, l=2, o=1] — you have BOTH! ✓
 
 ============================
+
+
+For comparators: a-b = ascending, b-a = descending. We want highest frequency FIRST.
+
+// Ascending: small first
+Arrays.sort(arr, (a,b) -> a[1] - b[1]);
+
+// Descending: big first (we want this!)
+Arrays.sort(arr, (a,b) -> b[1] - a[1]);
